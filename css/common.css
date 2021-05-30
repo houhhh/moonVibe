@@ -57,7 +57,8 @@ button {
 .btnSearch:after,
 .rightArrow:after,
 .btnNext
-span:after {
+span:after,
+.billText:after {
   background: url("../images/sp_vibe.62b23c4a.png") no-repeat; }
 
 .gnb .navIcon,
@@ -351,14 +352,13 @@ body {
       font-size: 17px;
       font-weight: 600; }
     .subContent h3 .billText {
-      background: green;
-      padding: 3px 4px 3px 4px;
+      padding: 1px 4px 1px 4px;
       display: inline-block; }
       .subContent h3 .billText:after {
         content: '';
         display: block;
-        height: 14px;
-        width: 100px;
+        height: 18px;
+        width: 80px;
         background-position: -961px -806px; }
     .subContent h3 span {
       padding: 1px 1px 2px 4px;
