@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@mixin flex($a:stretch, $j:flex-start, $wrap:nowrap) {
+    display:flex;
+    align-items:$a;
+    justify-content:$j;
+    flex-wrap:$wrap;
+    -ms-display:flex;
+    -ms-align-items:$a;
+    -ms-justify-content:$j;
+    -ms-flex-wrap:$wrap; 
+
+    @content;
+}
+@mixin radius($r) {
+    border-radius:$r;
+    -ms-border-radius:$r;
+
+}
+@mixin circle($size) {// 픽셀로 들어감 px 
+    width:$size;
+    height:$size;
+    border-radius:50%;
+    -ms-border-radius:50%;
+    display:block;
+}
+@mixin navIcon($n, $x, $y, $x2, $y2) {
+    &:nth-child(#{$n}) a {
+        &.active .navIcon {
+            background-position:$x2 $y2;
+        }
+        .navIcon {
+            background-position: $x $y;
+        }
+    }
+}
