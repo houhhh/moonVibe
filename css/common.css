@@ -345,10 +345,21 @@ body {
     font-weight: 800; }
   .subContent h3 {
     margin-top: 50px;
-    display: block; }
+    display: block;
+    background: pink; }
     .subContent h3 strong {
       font-size: 17px;
       font-weight: 600; }
+    .subContent h3 .billText {
+      background: green;
+      padding: 3px 4px 3px 4px;
+      display: inline-block; }
+      .subContent h3 .billText:after {
+        content: '';
+        display: block;
+        height: 14px;
+        width: 100px;
+        background-position: -961px -806px; }
     .subContent h3 span {
       padding: 1px 1px 2px 4px;
       display: inline-block; }
@@ -499,7 +510,7 @@ body {
   margin-bottom: 30px; }
 .rank .domeRank strong {
   font-size: 18px;
-  font-weight: 800; }
+  font-weight: 600; }
 .rank .domeRank .rightArrow {
   display: inline-block;
   padding: 0 0 2px 3px; }
@@ -656,11 +667,10 @@ body {
   color: #999; }
 .rank .top50 {
   width: 975px;
-  height: 180px;
+  height: 280px;
   display: flex; }
   .rank .top50 .diskList {
-    height: 190px;
-    width: 160px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     margin-left: 15px;
@@ -669,10 +679,18 @@ body {
       margin-left: 0; }
     .rank .top50 .diskList li .disk {
       display: block;
-      height: 160px;
-      width: 160px;
+      height: 183px;
+      width: 183px;
       background: red;
       border-radius: 50%;
       -ms-border-radius: 50%; }
+    .rank .top50 .diskList li:nth-child(2) {
+      margin: 0 auto; }
+    .rank .top50 .diskList li:last-child {
+      margin: 0 auto;
+      margin-top: 30px; }
+.rank .billboard {
+  background: blue;
+  margin-top: 50px; }
 
 /*# sourceMappingURL=common.css.map */

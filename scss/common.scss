@@ -290,7 +290,7 @@ body {
                     margin-top:10px;
                     font-size:24px;
                     font-weight:600;
-                   
+                    
                     
                 }
                 p {
@@ -385,12 +385,25 @@ body {
     h3 {
         margin-top:50px;
         display:block; // 블락을 줘야 마진이 먹음
-        
+        background:pink;
 
         strong {
             font-size:17px;
             font-weight:600;
             
+        }
+        .billText {
+            background:green;
+            padding:3px 4px 3px 4px;
+            display:inline-block;
+            
+            &:after {
+                content:'';
+                display:block;
+                height:14px;
+                width:100px;
+                background-position:-961px -806px;
+            }
         }
         span {
             
@@ -400,13 +413,11 @@ body {
                 content:'';
                 display:block;
                 background-position:-1033px -556px;
-                
                 width:7px;
                 height:10px;
                 
             }
-            
-        }
+        } 
     }
 }
 .rank {
@@ -562,7 +573,7 @@ body {
     .domeRank {
         strong {
             font-size:18px;
-            font-weight:800;
+            font-weight:600;
         }
         .rightArrow {
             display:inline-block;
@@ -719,16 +730,16 @@ body {
     }
     .top50 {
         width:975px;
-        height:180px;
+        height:280px;
         display:flex;
         
         .diskList {
-            height:190px;
-            width:160px;
+            height:250px;
             display:flex;
             flex-direction:column;
             margin-left:15px;
             margin-top:30px;
+            
             &:first-child {
                 margin-left:0;
             }
@@ -736,17 +747,27 @@ body {
                 
                 .disk {
                     display:block;
-                    height:160px;
-                    width:160px;
+                    height:183px;
+                    width:183px;
                     background:red;
                     @include radius(50%);
                     
                 }
-                
+                &:nth-child(2) {
+                    margin:0 auto;
+                }
+                &:last-child {
+                    margin:0 auto;
+                    margin-top:30px;
+                }
             }
         }
     }
     
+    .billboard {
+        background:blue;
+        margin-top:50px;
+    }
     
 }
 

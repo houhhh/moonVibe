@@ -569,6 +569,58 @@
                 </li>
             </ul>
         </div>
+        <h3>
+            <a href="#">
+                <span class="billText"></span>
+                <strong>200 Albums</strong>
+                <span class="rightArrow"></span>
+            </a>
+        </h3>
+        <div class="billboard">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="AbumImage"></span>
+                        <i>1</i>
+                        <p>The off-Season</p>
+                        <em>J. Cole</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="AbumImage"></span>
+                        <i>1</i>
+                        <p>The off-Season</p>
+                        <em>J. Cole</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="AbumImage"></span>
+                        <i>1</i>
+                        <p>The off-Season</p>
+                        <em>J. Cole</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="AbumImage"></span>
+                        <i>1</i>
+                        <p>The off-Season</p>
+                        <em>J. Cole</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="AbumImage"></span>
+                        <i>1</i>
+                        <p>The off-Season</p>
+                        <em>J. Cole</em>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
         
         
     </div> <!-- rank , subContent end -->
