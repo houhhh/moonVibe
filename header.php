@@ -1,7 +1,7 @@
 <header class="pageHeader">
         <div class="logo">
             <h1>
-                <a href="index.html">
+                <a href="index.php">
                     <span class="blind">VIBE</span>
                 </a>
             </h1>
