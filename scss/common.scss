@@ -379,61 +379,148 @@ body {
     }
 
     .main-magazine {
-        background: #fff;
-        margin-top: 30px;
-        padding: 10px 0;
+        margin:50px 0;
+        
+       
 
-        h2 {
-            font-weight: 600;
+        
+        
+    } 
 
-            &:hover {
-                text-decoration: underline;
+} // .main
+
+.main {
+    .baseWidth {
+        section {
+
+            border-top:1px solid #d8d8d8;
+            padding-top:30px;
+
+            &:first-child {
+                border-top:0;
+                padding-top:0;
             }
-        }
-
-        .content {
-            margin-top: 30px;
 
             .thum {
-
-
+                display:block;
                 img {
-                    width: 100%;
+                    width:100%;height:100%;
                 }
             }
-        }
-
-        .list {
-            display: flex;
-            justify-content: space-between;
-            background: red;
-            padding: 40px 0 60px 0;
-
-            li {
-
-                .content {
-                    position: relative; //이미지에 포지션이 있어야 위치함 가로로는 100%해야 채워짐
-
-                    &:hover .option {
-                        display: block;
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom:20px; 
+    
+                a { 
+                    position:relative;
+                    &:after {
+                        content:'';
+                        display:block;
+                        width:12px;
+                        height:16px;
+                        background:url($url + 'section_arrow.png') no-repeat center center/contain;
+                        position:absolute;
+                        right:-22px;
+                        top:calc(50% - 8px);
                     }
                 }
-
-                .option {
-                    position: absolute;
-                    display: none;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 80px;
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
-
-
+    
+               
+    
+                &:hover {
+                    text-decoration: underline;
                 }
             }
+    
         }
     }
 }
+
+// musicList 공통
+.main .musicList {
+    .list {
+        li {
+            width: 310px; 
+
+            .content {
+                position:relative;
+                &:hover .option {
+                    opacity:1;
+                } 
+            }
+
+            .thum {
+                display: block;
+                height: 310px;
+
+            }
+
+            .option {
+                position:absolute;
+                left:0;bottom:0;
+                width:100%;
+                box-sizing:border-box;
+                opacity:0;
+                z-index:10;
+                transition:all 0.4s;
+                background-image:linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+                padding:15px 18px;
+                @include flex($j:space-between);
+                .btnPlay {
+                    @include circle(45px);
+                    background:rgba(255,255,255,0.8) url($url + 'option_arrow.png') no-repeat center center/14px;
+                    transition:all 0.4s;
+                    &:hover {
+                        transform:scale(1.1);
+                        background-color:rgba(255,255,255,1);
+                    }
+                }
+                .btnOption {
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+        
+                    .circle {
+                        @include circle(6px);
+                        background:rgba(255,255,255,0.5);
+    
+                        &:nth-child(2) {
+                            margin:0 5px;
+                        }
+                    }
+                }
+            }
+
+
+            h3 {
+                font-size:16px;
+                color:#333;
+                margin:0.75em 0;
+            }
+
+            time {
+                color:#999;
+                font-size:0.8em;
+            }
+            
+
+
+        }
+    }
+}
+
+// main-news 
+.main .main-news.musicList {
+
+    li {
+        .thum {
+            height:160px;
+        }
+    }
+  
+}
+
 
 // home end 
 .subContent {

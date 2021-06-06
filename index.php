@@ -38,50 +38,65 @@
                 </div>
             </div>    
         </section>
+
         <div class="baseWidth">
-            <section class="main-magazine">
+            <section class="main-magazine musicList">
                 <h2><a href="#">매거진</a></h2>
                 <ul class="list">
                     <li>
                         <div class="content">
                             <a href="#" class="thum">
-                                <img src="/images/magazine_1.png" alt="">
+                                <img src="./images/magazine_1.png" alt="">
                             </a>
                             <div class="option">
-                                option
+                                <button type="button" class="btnPlay">
+                                    <span class="blind">음악 플레이하기</span>
+                                </button>
+                                <a href="#" class="btnOption">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="blind">옵션더보기</span>
+                                </a>
                             </div>
                         </div>
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
                         <time>2021.03.25</time>
                     </li>
+                   
+                </ul>
+            </section>
+
+            <section class="main-news musicList">
+                <h2><a href="#">NEWS</a></h2>
+                <ul class="list">
                     <li>
                         <div class="content">
                             <a href="#" class="thum">
-                                <img src="/images/magazine_2.png" alt="">
+                                <img src="./images/magazine_1.png" alt="">
                             </a>
                             <div class="option">
-                                option
+                                <button type="button" class="btnPlay">
+                                    <span class="blind">음악 플레이하기</span>
+                                </button>
+                                <a href="#" class="btnOption">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="blind">옵션더보기</span>
+                                </a>
                             </div>
-                        </div>
+                        </div> 
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
                         <time>2021.03.25</time>
                     </li>
-                    <li>
-                        <div class="content">
-                            <a href="#" class="thum">
-                                <img src="/images/magazine_3.png" alt="">
-                            </a>
-                            <div class="option">
-                                option
-                            </div>
-                        </div>
-                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
-                    </li>
+                   
                 </ul>
             </section>
         </div>
     </div>
+
+    <br><br><br>
     <?php include './footer.php'; ?>
     <?php include './player.php'; ?>
 </body>
