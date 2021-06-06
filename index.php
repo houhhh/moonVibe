@@ -94,8 +94,8 @@
                 </ul>
             </section>
         </div>
-    </div>
-
+    </div> 
+    
     <br><br><br>
     <?php include './footer.php'; ?>
     <?php include './player.php'; ?>

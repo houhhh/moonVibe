@@ -1,5 +1,5 @@
 <footer class="pageFooter">
-        COPYRIGHTS
+        COPYRIGHTS 
 </footer>
     
     
