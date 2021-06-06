@@ -56,7 +56,8 @@ button {
 .logo a:after,
 .btnSearch:after,
 .rightArrow:after,
-.btnNext span:after,
+.btnNext
+span:after,
 .billText:after {
   background: url("../images/sp_vibe.62b23c4a.png") no-repeat; }
 
@@ -70,14 +71,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, AppleSDGothicNeo, Helvetica, "Malgun Gothic", sans-serif;
   color: #232323;
   background-color: #fff; }
-
-.main-pick .inner,
-.baseWidth {
-  max-width: 1160px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto; }
 
 .pageHeader {
   background: black;
@@ -236,21 +229,19 @@ body {
   padding-left: 225px; }
   .main .bannerTop {
     background: #ffe0f3;
-    height: 50px;
+    height: 66px;
     text-align: center;
     position: relative; }
     .main .bannerTop img {
-      height: 100%; }
+      width: 100%; }
     .main .bannerTop .close {
-      height: 50px;
-      width: 50px;
+      height: 66px;
+      width: 66px;
       position: absolute;
       top: 0;
       right: 0;
       box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+      padding-top: 23px; }
       .main .bannerTop .close .box {
         display: block;
         height: 18px;
@@ -273,147 +264,78 @@ body {
             transform-origin: left bottom;
             margin-top: 12px;
             margin-left: 3px; }
-  .main .main-pick {
-    background-color: #f5f5f5;
-    padding: 35px 0; }
-    .main .main-pick .inner {
-      background-color: #fff; }
-      .main .main-pick .inner .thum {
-        width: 322px;
-        height: 322px;
-        float: left; }
-        .main .main-pick .inner .thum img {
-          height: 100%; }
-      .main .main-pick .inner .content {
-        outline: 1px solid blue;
-        width: calc(100% - 322px);
-        padding: 50px;
-        box-sizing: border-box;
-        float: right;
-        display: flex;
-        height: 322px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start; }
-        .main .main-pick .inner .content strong {
-          background: purple;
-          padding: 3px 15px 3px 15px;
-          border-radius: 20px;
-          -ms-border-radius: 20px;
-          font-weight: 600;
-          display: inline-block;
-          color: #fff; }
-        .main .main-pick .inner .content h3 {
-          margin-top: 10px;
-          font-size: 24px;
-          font-weight: 600; }
-        .main .main-pick .inner .content p {
-          margin-top: 10px;
-          color: #999;
-          font-size: 12px;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden; }
-        .main .main-pick .inner .content .info {
-          color: #999;
-          font-weight: 300;
-          margin-top: 20px;
-          font-size: 13px; }
-  .main .main-magazine {
-    margin: 50px 0; }
-
-.main .baseWidth section {
-  border-top: 1px solid #d8d8d8;
-  padding-top: 30px; }
-  .main .baseWidth section:first-child {
-    border-top: 0;
-    padding-top: 0; }
-  .main .baseWidth section .thum {
-    display: block; }
-    .main .baseWidth section .thum img {
-      width: 100%;
-      height: 100%; }
-  .main .baseWidth section h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px; }
-    .main .baseWidth section h2 a {
-      position: relative; }
-      .main .baseWidth section h2 a:after {
-        content: '';
-        display: block;
-        width: 12px;
-        height: 16px;
-        background: url("../images/section_arrow.png") no-repeat center center/contain;
-        position: absolute;
-        right: -22px;
-        top: calc(50% - 8px); }
-    .main .baseWidth section h2:hover {
-      text-decoration: underline; }
-
-.main .musicList .list li {
-  width: 310px; }
-  .main .musicList .list li .content {
-    position: relative; }
-    .main .musicList .list li .content:hover .option {
-      opacity: 1; }
-  .main .musicList .list li .thum {
-    display: block;
-    height: 310px; }
-  .main .musicList .list li .option {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-    opacity: 0;
-    z-index: 10;
-    transition: all 0.4s;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-    padding: 15px 18px;
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    -ms-display: flex;
-    -ms-align-items: stretch;
-    -ms-justify-content: space-between;
-    -ms-flex-wrap: nowrap; }
-    .main .musicList .list li .option .btnPlay {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      -ms-border-radius: 50%;
-      display: block;
-      background: rgba(255, 255, 255, 0.8) url("../images/option_arrow.png") no-repeat center center/14px;
-      transition: all 0.4s; }
-      .main .musicList .list li .option .btnPlay:hover {
-        transform: scale(1.1);
-        background-color: white; }
-    .main .musicList .list li .option .btnOption {
+  .main .main-pick .inner {
+    max-width: 1160px;
+    background-color: #fff; }
+    .main .main-pick .inner .content {
+      padding: 0 150px 0 0;
       display: flex;
-      align-items: center;
-      justify-content: center; }
-      .main .musicList .list li .option .btnOption .circle {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        -ms-border-radius: 50%;
-        display: block;
-        background: rgba(255, 255, 255, 0.5); }
-        .main .musicList .list li .option .btnOption .circle:nth-child(2) {
-          margin: 0 5px; }
-  .main .musicList .list li h3 {
-    font-size: 16px;
-    color: #333;
-    margin: 0.75em 0; }
-  .main .musicList .list li time {
-    color: #999;
-    font-size: 0.8em; }
-
-.main .main-news.musicList li .thum {
-  height: 160px; }
+      height: 322px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .main .main-pick .inner .content strong {
+        background: purple;
+        padding: 3px 15px 3px 15px;
+        border-radius: 20px;
+        -ms-border-radius: 20px;
+        font-weight: 600;
+        display: inline-block;
+        color: #fff; }
+      .main .main-pick .inner .content h3 {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 600; }
+      .main .main-pick .inner .content p {
+        margin-top: 10px;
+        color: #999;
+        font-size: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden; }
+      .main .main-pick .inner .content .info {
+        color: #999;
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 13px; }
+    .main .main-pick .inner .thum {
+      width: 322px;
+      float: left;
+      margin-right: 50px; }
+      .main .main-pick .inner .thum img {
+        width: 100%; }
+  .main .main-magazine {
+    background: #fff;
+    margin-top: 30px;
+    padding: 10px 0; }
+    .main .main-magazine h2 {
+      font-weight: 600; }
+      .main .main-magazine h2:hover {
+        text-decoration: underline; }
+    .main .main-magazine .content {
+      margin-top: 30px; }
+      .main .main-magazine .content .thum {
+        max-width: 1160px; }
+        .main .main-magazine .content .thum img {
+          width: 100%; }
+    .main .main-magazine .list {
+      display: flex;
+      justify-content: space-between;
+      background: red;
+      padding: 40px 0 60px 0; }
+      .main .main-magazine .list li .content {
+        position: relative; }
+        .main .main-magazine .list li .content:hover .option {
+          display: block; }
+      .main .main-magazine .list li .option {
+        position: absolute;
+        display: none;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
 
 .subContent {
   width: 975px;
@@ -490,7 +412,8 @@ body {
     position: relative; }
     .rank li.item .ranking .num {
       width: 8px;
-      display: block; }
+      display: block;
+      outline: 1px solid red; }
     .rank li.item .ranking .arrow {
       display: block; }
       .rank li.item .ranking .arrow:after {
