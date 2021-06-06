@@ -8,7 +8,7 @@
 
     <div class="main">
         <div class="bannerTop">
-            <a href="#" class="link">
+            <a href="http://www.naver.com" class="link">
                 <img src="./images/bn_top.png" alt="4개월간 0원으로 네이버 콘텍스트 구독">
             </a>
             <a href="#" class="close">
@@ -23,9 +23,7 @@
             <div class="inner clearfix">
                 <div class="thum">
                     <img src="./images/rollin.png" alt="cover">
-                </div>
-                
-            
+                </div> 
                 <div class="content">
                     <strong>GENRE</strong>
                     <h3>차트를 거슬러 오른<br>역주행 곡</h3>
@@ -40,47 +38,49 @@
                 </div>
             </div>    
         </section>
-        <section class="main-magazine">
-            <h2><a href="#">매거진</a></h2>
-            <ul class="list">
-                <li>
-                    <div class="content">
-                        <a href="#" class="thum">
-                            <img src="/images/magazine_1.png" alt="">
-                        </a>
-                        <div class="option">
-                            option
+        <div class="baseWidth">
+            <section class="main-magazine">
+                <h2><a href="#">매거진</a></h2>
+                <ul class="list">
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="/images/magazine_1.png" alt="">
+                            </a>
+                            <div class="option">
+                                option
+                            </div>
                         </div>
-                    </div>
-                    <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                    <time>2021.03.25</time>
-                </li>
-                <li>
-                    <div class="content">
-                        <a href="#" class="thum">
-                            <img src="/images/magazine_2.png" alt="">
-                        </a>
-                        <div class="option">
-                            option
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="/images/magazine_2.png" alt="">
+                            </a>
+                            <div class="option">
+                                option
+                            </div>
                         </div>
-                    </div>
-                    <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                    <time>2021.03.25</time>
-                </li>
-                <li>
-                    <div class="content">
-                        <a href="#" class="thum">
-                            <img src="/images/magazine_3.png" alt="">
-                        </a>
-                        <div class="option">
-                            option
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="/images/magazine_3.png" alt="">
+                            </a>
+                            <div class="option">
+                                option
+                            </div>
                         </div>
-                    </div>
-                    <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                    <time>2021.03.25</time>
-                </li>
-            </ul>
-        </section>
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
     <?php include './footer.php'; ?>
     <?php include './player.php'; ?>
