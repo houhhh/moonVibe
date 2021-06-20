@@ -912,8 +912,9 @@ body {
         right:-12px;
         top:calc(50% - 4px);
     }
-    .on {
-        
+    &.on:after {
+        display:block;
+
     }
 
 }
