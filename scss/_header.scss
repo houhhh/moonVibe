@@ -40,16 +40,21 @@
     .btnLogin {
         border:1px solid rgba(255,255,255,0.3);
         border-width:1px 0;
+        
         @include flex($a:center);
         padding:10px 0 10px 20px; 
         .member_id {
             margin-left:10px;
+            color:#fff;
         }
         .profile {
             
             img {
                 @include circle(30px);
             }
+
+
+            
         }
     }
     .gnb {
@@ -179,4 +184,25 @@
  
 }
 
-// header end
+// mobile
+
+.btnHam {
+    position:absolute;
+    padding:12px;   
+    top:16px;
+    right:5px; 
+    width:25px;height:17px;
+    display:none;
+
+    b {
+         display:block;
+         height:2px;
+         background-color:#fff;
+         &:nth-child(2) {
+             margin:5px 0;
+         }
+        //  &:nth-of-type(2) { B태그 중에 두번째형제요소
+        //      margin:5px 0;
+        //  }
+    }
+}
