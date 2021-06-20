@@ -63,8 +63,49 @@
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
                         <time>2021.03.25</time>
                     </li>
-                   
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="./images/magazine_1.png" alt="">
+                            </a>
+                            <div class="option">
+                                <button type="button" class="btnPlay">
+                                    <span class="blind">음악 플레이하기</span>
+                                </button>
+                                <a href="#" class="btnOption">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="blind">옵션더보기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="./images/magazine_1.png" alt="">
+                            </a>
+                            <div class="option">
+                                <button type="button" class="btnPlay">
+                                    <span class="blind">음악 플레이하기</span>
+                                </button>
+                                <a href="#" class="btnOption">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="blind">옵션더보기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                    
                 </ul>
+                <span class="line"></span>
             </section>
 
             <section class="main-news musicList">
@@ -90,8 +131,50 @@
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
                         <time>2021.03.25</time>
                     </li>
-                   
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="./images/magazine_1.png" alt="">
+                            </a>
+                            <div class="option">
+                                <button type="button" class="btnPlay">
+                                    <span class="blind">음악 플레이하기</span>
+                                </button>
+                                <a href="#" class="btnOption">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="blind">옵션더보기</span>
+                                </a>
+                            </div>
+                        </div> 
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <a href="#" class="thum">
+                                <img src="./images/magazine_1.png" alt="">
+                            </a>
+                            <div class="option">
+                                <button type="button" class="btnPlay">
+                                    <span class="blind">음악 플레이하기</span>
+                                </button>
+                                <a href="#" class="btnOption">
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="circle"></span>
+                                    <span class="blind">옵션더보기</span>
+                                </a>
+                            </div>
+                        </div> 
+                        <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
+                        <time>2021.03.25</time>
+                    </li>
+                    
+                    
                 </ul>
+                
             </section>
         </div>
     </div> 
