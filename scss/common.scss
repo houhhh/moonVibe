@@ -347,7 +347,7 @@ body {
         }
         .list {
             display:flex;
-            justify-content:space-between;  
+            // justify-content:space-between;  
             position:relative;
             border: 1px solid #f1f1f1;
             border-width:0 0 2px 0;
@@ -357,15 +357,16 @@ body {
             li {
                 width:302px;
                 height:330px;
-                
+                margin-left:10px;
+                &:first-child {
+                    margin-left:0;
+                }
                 .content {
                     position:relative; //이미지에 포지션이 있어야 위치함 가로로는 100%해야 채워짐
                     &:hover .option {
                         display:block;
                     }
-                    .thum {
-                        
-                    }
+                    
                 }
                 
                 
@@ -426,7 +427,7 @@ body {
         }
         .list {
             display:flex;
-            justify-content:space-between;  
+            // justify-content:space-between;  
             position:relative;
             border: 1px solid #f1f1f1;
             border-width:0 0 2px 0;
@@ -436,7 +437,10 @@ body {
             li {
                 width:302px;
                 height:330px;
-                
+                margin-left:10px;
+                &:first-child {
+                    margin-left:0;
+                }    
                 .content {
                     position:relative; //이미지에 포지션이 있어야 위치함 가로로는 100%해야 채워짐
                     &:hover .option {
@@ -483,6 +487,7 @@ body {
                     font-size:13px;
 
                 }
+                
                 
             }
             
