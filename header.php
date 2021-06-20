@@ -10,7 +10,7 @@
             </a><!-- 포지션 사용 -->
         </div>
 
-        <div class="scrollArea">
+        <div class="scrollArea scrollDesign">
             <div class="member_info">
                 <div class="logout">
                     <a href="#" class="btnLogin">

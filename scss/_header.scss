@@ -1,1 +1,182 @@
 @charset "utf-8";
+
+.pageHeader {
+    background:black;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    width:225px;
+    z-index:100;
+    .logo {
+        height:73px;
+        position:relative;
+        h1 a {
+            display:inline-block;
+            padding:28px 10px 28px 15px; 
+            &:after {
+                content:'';
+                display:block;
+                width:115px;
+                height:18px;
+                background-position:-842px -806px;
+            }
+        }
+        .btnSearch {
+            padding:27px 20px;
+            position:absolute;
+            top:0;
+            right:0;
+            &:after {
+                content:'';
+                display:block;
+                height:21px;
+                width:21px;
+                
+                background-position:-745px -985px;
+            }
+        }
+    }
+    .btnLogin {
+        border:1px solid rgba(255,255,255,0.3);
+        border-width:1px 0;
+        @include flex($a:center);
+        padding:10px 0 10px 20px; 
+        .member_id {
+            margin-left:10px;
+        }
+        .profile {
+            
+            img {
+                @include circle(30px);
+            }
+        }
+    }
+    .gnb {
+        
+        margin-top:30px;
+        padding:10px 20px 0 20px;
+        color: #f2f2f2;
+        font-size:13px;
+        .menu {
+            li {
+                margin-bottom:10px;
+                a {
+                    opacity:0.6;
+                    transition:all 0.5s;
+                    @include flex($a:center);
+                    &.active {
+                        color:$pink;
+                    }
+                    &:hover {
+                        opacity:1;
+                    }
+                    .navIcon {
+                        display:block;
+                        height:23px;
+                        width:23px;
+                    }
+                    strong {
+                        margin-left:10px;
+                    }
+    
+                    
+                }
+                @include navIcon(1, -395px, -1028px, -425px, -1028px);
+                @include navIcon(2, -353px, -986px, -380px, -986px);
+                @include navIcon(3, -409px, -986px, -436px, -986px);
+                @include navIcon(4, -275px, -1028px, -550px, -1028px);
+                @include navIcon(5, -335px, -1027px, -606px, -1027px);
+    
+            }
+            .member_menu {
+                display:none;
+            }
+        }
+        .menu2 {
+            margin-top:30px;
+            border-top:1px solid rgba(255,255,255,0.3);
+            padding-top:30px;
+            
+            li {
+                margin-bottom:20px;
+                a {
+                    opacity:0.5;
+                    transition:all 0.5s;
+                    &:hover {
+                        opacity:1;
+                    
+                    }
+                }
+                .bgMenu1 {
+                    .bg {
+                    
+                    height:15px;
+                    width:80px;
+                    display:block;
+                    background-position:-272px -835px;
+                    }
+                    
+                    
+                }
+                .bgMenu2 {
+                    .bg {
+                    
+                    height:15px;
+                    width:83px;
+                    display:block;
+                    background-position:-274px -812px;
+                    }
+                    
+                    
+                }
+            }    
+        }
+        
+    }
+    .scrollArea {
+        height:100%;
+        max-height:calc(100% - 230px);
+        background:#000;
+        position:absolute; //포지션을 지워도 변화가? logo에 맞추기위해 주는가?
+        left:0;
+        top:83px;
+        overflow-y:auto;// 필수
+        width:100%;
+    }
+    .btnInstall {
+        position:fixed;
+        left:18px;
+        bottom:95px;
+        border:1px solid rgba(255,255,255,0.5);
+        padding:10px 45px;
+        @include radius(5px);
+        color:rgba(255,255,255,0.8); 
+        transition:all 0.5s;
+
+        &:hover {
+            color:rgba(255,255,255,1);
+            border:1px solid rgba(255,255,255, 0.8);
+        }
+     
+
+        &:before {
+            content:'';
+            display:block;
+            height:60px;
+            top:-61px;
+            left:-19px;
+            width:225px;
+            position:absolute;
+            background-image:linear-gradient(to top, rgba(0,0,0,1) 30%,rgba(0,0,0,0));
+        }
+        //hover 가 클래스에선 안먹음
+
+        
+        
+
+    }
+ 
+}
+
+// header end

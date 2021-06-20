@@ -1,5 +1,5 @@
 <!-- 하단 고정 플레이어 영역-->
-<footer> <!-- 포지션 플레이 -->
+  <!-- 포지션 플레이 -->
         <div class="playBar">
             <div class="barLeft">
                 <span class="musIcon"></span>
