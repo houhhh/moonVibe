@@ -899,11 +899,9 @@ body {
         position:absolute;
         right:-12px;
         top:calc(50% - 4px);
-    }
-    
-
+    } 
     &.on:after {
-        display:block;
+        display:block; 
     }
 
 }
