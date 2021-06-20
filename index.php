@@ -62,6 +62,8 @@
                         </div>
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
                         <time class="new on">2021.03.25</time>
+                        <!-- .on이 붙었을 경우에 new 표시됨 -->
+ 
                     </li>
                     <li>
                         <div class="content">
@@ -81,7 +83,7 @@
                             </div>
                         </div>
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
+                        <time class="new">2021.03.25</time>
                     </li>
                     <li>
                         <div class="content">
@@ -101,7 +103,7 @@
                             </div>
                         </div>
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
+                        <time class="new">2021.03.25</time>
                     </li>
                     
                 </ul>
@@ -129,7 +131,7 @@
                             </div>
                         </div> 
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
+                        <time class="new">2021.03.25</time>
                     </li>
                     <li>
                         <div class="content">
@@ -149,7 +151,7 @@
                             </div>
                         </div> 
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
+                        <time class="new">2021.03.25</time>
                     </li>
                     <li>
                         <div class="content">
@@ -169,7 +171,7 @@
                             </div>
                         </div> 
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
+                        <time class="new">2021.03.25</time>
                     </li>
                     
                     
