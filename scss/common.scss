@@ -898,4 +898,22 @@ body {
     
 }
 
-    
+
+// 상태표시
+
+.new {
+    position:relative;
+    &:after {
+        content:'';
+        @include circle(8px);
+        display:none;
+        background-color:red;
+        position:absolute;
+        right:-12px;
+        top:calc(50% - 4px);
+    }
+    .on {
+        
+    }
+
+}

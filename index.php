@@ -43,7 +43,7 @@
             <section class="main-magazine musicList">
                 <h2><a href="#">매거진</a></h2>
                 <ul class="list">
-                    <li>
+                    <li> 
                         <div class="content">
                             <a href="#" class="thum">
                                 <img src="./images/magazine_1.png" alt="">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <h3>보고 듣고만 있어도 힐링,<br>문별의 &lt;studio문나잇&gt;</h3>
-                        <time>2021.03.25</time>
+                        <time class="new on">2021.03.25</time>
                     </li>
                     <li>
                         <div class="content">
