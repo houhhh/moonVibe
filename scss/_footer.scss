@@ -1,8 +1,19 @@
 @charset "utf-8";
 
 .pageFooter {
-    background-color:#fefefe;
+    background-color:#f3f3f3;
     border-top:1px solid #ddd;
-    padding:50px 0;
+    padding:20px 20px 20px 255px;
     text-align:center;
+    bottom:83px;
+    position:relative; 
+
+    .menu {
+        @include flex($a:center, $j:space-between);
+
+        .list {
+            @include flex($a:center, $j:space-between);
+        }
+    }
 }
+

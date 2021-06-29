@@ -27,176 +27,9 @@ body {
     background-color: #fff;
 }
 
+@import 'header';
 
-    
 
-
-.pageHeader {
-    background:black;
-    position:fixed;
-    left:0;
-    top:0;
-    bottom:0;
-    width:225px;
-    .logo {
-        height:73px;
-        position:relative;
-        h1 a {
-            display:inline-block;
-            padding:28px 10px 28px 15px; 
-            &:after {
-                content:'';
-                display:block;
-                width:115px;
-                height:18px;
-                background-position:-842px -806px;
-            }
-        }
-        .btnSearch {
-            padding:27px 20px;
-            position:absolute;
-            top:0;
-            right:0;
-            &:after {
-                content:'';
-                display:block;
-                height:21px;
-                width:21px;
-                
-                background-position:-745px -985px;
-            }
-        }
-    }
-    .btnLogin {
-        border:1px solid rgba(255,255,255,0.3);
-        border-width:1px 0;
-        @include flex($a:center);
-        padding:10px 0 10px 20px;
-        margin-top:60px;
-        .member_id {
-            margin-left:10px;
-        }
-        .profile {
-            
-            img {
-                @include circle(30px);
-            }
-        }
-    }
-    .gnb {
-        
-        margin-top:30px;
-        padding:10px 20px 0 20px;
-        color: #f2f2f2;
-        font-size:13px;
-        .menu {
-            li {
-                margin-bottom:10px;
-                a {
-                    opacity:0.6;
-                    transition:all 0.5s;
-                    @include flex($a:center);
-                    &.active {
-                        color:$pink;
-                    }
-                    &:hover {
-                        opacity:1;
-                    }
-                    .navIcon {
-                        display:block;
-                        height:23px;
-                        width:23px;
-                    }
-                    strong {
-                        margin-left:10px;
-                    }
-    
-                    
-                }
-                @include navIcon(1, -395px, -1028px, -425px, -1028px);
-                @include navIcon(2, -353px, -986px, -380px, -986px);
-                @include navIcon(3, -409px, -986px, -436px, -986px);
-                @include navIcon(4, -275px, -1028px, -550px, -1028px);
-                @include navIcon(5, -335px, -1027px, -606px, -1027px);
-    
-            }
-            .member_menu {
-                display:none;
-            }
-        }
-        .menu2 {
-            margin-top:30px;
-            border-top:1px solid rgba(255,255,255,0.3);
-            padding-top:30px;
-            
-            li {
-                margin-bottom:20px;
-                a {
-                    opacity:0.5;
-                    transition:all 0.5s;
-                    &:hover {
-                        opacity:1;
-                    
-                    }
-                }
-                .bgMenu1 {
-                    .bg {
-                    
-                    height:15px;
-                    width:80px;
-                    display:block;
-                    background-position:-272px -835px;
-                    }
-                    
-                    
-                }
-                .bgMenu2 {
-                    .bg {
-                    
-                    height:15px;
-                    width:83px;
-                    display:block;
-                    background-position:-274px -812px;
-                    }
-                    
-                    
-                }
-            }    
-        }
-        
-    }
-    .scrollArea {
-        height:calc(100% - 500px);
-        background:green;
-        position:absolute; //포지션을 지워도 변화가? logo에 맞추기위해 주는가?
-        left:0;
-        top:83px;
-        overflow-y:auto;// 필수
-        width:100%;
-    }
-    .btnInstall {
-        position:fixed;
-        left:18px;
-        bottom:95px;
-        border:1px solid rgba(255,255,255,0.8);
-        padding:10px 45px;
-        @include radius(5px);
-        color:rgba(255,255,255,1);
-        opacity:0.6;
-        transition:all 0.5s;
-        &:hover {
-            opacity:1;
-        }
-        //hover 가 클래스에선 안먹음
-
-        
-        
-
-    }
- 
-}
-
-// header end
 
 .playBar {
     position:fixed;
@@ -206,6 +39,7 @@ body {
     height:83px;
     width:100%;
     background-color:rgba(25,25,25,.97);
+    z-index:101;
 }
 
 // bottom bar end 
@@ -218,7 +52,7 @@ body {
         text-align:center;
         position:relative;
         img {
-                width:100%;
+               height:100%;
             }
         .close {
             height:66px;
@@ -266,10 +100,12 @@ body {
         }
         
     }
-    .main-pick {
+    .main-pick { 
+        background-color:#f3f3f3;
+        padding:40px 0;
         .inner {
-            max-width:1160px;
-            background-color:#fff;
+             background-color:#fff;
+          
             
             .content {
                 padding:0 150px 0 0;// 플렉스로 세로 정렬
@@ -325,7 +161,7 @@ body {
     }
     .main-magazine {
         background:#fff;
-        margin:30px 35px 0 35px;
+        margin:30px 0 0;
         padding:10px 0;
         
         h2 {
@@ -338,7 +174,7 @@ body {
         .content {
             margin-top:10px;
             .thum {
-                max-width:1160px;
+              
                 
                 img {
                     width:100%;
@@ -347,6 +183,8 @@ body {
         }
         .list {
             display:flex;
+            overflow-x:auto;
+            
             // justify-content:space-between;  
             position:relative;
             border: 1px solid #f1f1f1;
@@ -357,6 +195,7 @@ body {
             li {
                 width:302px;
                 height:330px;
+                flex-shrink:0;
                 margin-left:10px;
                 &:first-child {
                     margin-left:0;
@@ -404,8 +243,9 @@ body {
     }
     .main-news {
         background:#fff;
-        margin:10px 35px 0 35px;
+        margin:10px 0 0;
         padding:10px 0;
+        
         
         h2 {
             font-weight:700;
@@ -418,15 +258,18 @@ body {
         .list {
             display:flex;
             // justify-content:space-between;  
+            overflow-x:auto;
             position:relative;
             border: 1px solid #f1f1f1;
             border-width:0 0 2px 0;
-            padding:3px 0 90px 0; 
+            padding:3px 0 0;
+            margin-bottom:150px; 
             
             li {
                 width:302px;
                 height:330px;
                 margin-left:10px;
+                flex-shrink:0;
                 &:first-child {
                     margin-left:0;
                 }    
@@ -485,6 +328,15 @@ body {
         
     }
 }
+
+.baseWidth, .main-pick .inner {
+    max-width:962px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    box-sizing:border-box;
+}
+
 
 // home end 
 .subContent {
@@ -906,3 +758,37 @@ body {
 
 }
 
+@import 'footer','media';
+
+.scrollDesign { 
+      &::-webkit-scrollbar {
+        width: 8px;
+        border-radius:10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius:10px;
+        background-color: rgba(255,255,255,0.2);
+      }
+      &::-webkit-scrollbar-track {
+          
+        border-radius:10px;
+        background-color: rgba(255,255,255,0.17);
+      }
+}
+.scrollDesign2 { 
+      &::-webkit-scrollbar {
+        width:8px;
+        height:8px;
+        border-radius:5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius:5px;
+        background-color: rgba(0,0,0,0.2);
+      }
+      &::-webkit-scrollbar-track {
+        
+        border-radius:5px;
+        background-color: rgba(0,0,0,0.17);
+      }
+}
+ 
