@@ -1,19 +1,103 @@
 @charset "utf-8";
 
 .pageFooter {
+    font-size:13px;
     background-color:#f3f3f3;
     border-top:1px solid #ddd;
-    padding:20px 20px 20px 255px;
-    text-align:center;
+    padding-left: 255px; 
     bottom:83px;
     position:relative; 
 
-    .menu {
-        @include flex($a:center, $j:space-between);
+    .notice {
+        border-bottom:1px solid #ddd;
+        height:40px;
+        line-height:40px;
+        display:flex;
+
+        h3 {
+            font-weight:600;
+            margin-right:10px;
+        }
 
         .list {
-            @include flex($a:center, $j:space-between);
+            height:50px; 
+            overflow:hidden;
+            width:200px;
+
+            li {
+                @include abbr;
+            }
+        }
+    }
+
+    a {
+        transition:all 0.4s;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+
+    .info {
+        margin:20px 0;
+        background:rgba(255,255,0,0.5);
+      
+        dl {
+            display:flex;
+            
+            dt {
+                color:#999;
+            }
+
+            dd {
+                color:#333;
+                margin:0 20px 0 10px;
+            }
+        }
+
+        address ul {
+            display:flex;
+            flex-wrap:wrap;
+
+            li {
+                display:flex;
+            }
+            strong {
+                color:#999;
+            }
+
+            p {
+                color:#333;
+                margin:0 20px 0 10px;
+            }
+        } 
+    } // .info
+
+    .fnb {
+        // background:rgba(255,0,0,0.5);
+        position:absolute;
+        right:20px;
+        top:12px;
+        ul {
+            display:flex;
+
+            li {
+                margin-left:10px;
+            }
+        }
+    }
+
+    .sns {
+        background:rgba(0,255,255,0.3);
+        position:absolute;
+        top:50px;
+        right:20px;
+        display:flex;
+        li {
+            margin:0 5px;
         }
     }
 }
 
+/* 
+notice, info, fnb, sns 
+*/

@@ -1,0 +1,35 @@
+@charset "utf-8";
+// 반응형 
+
+@media all and (max-width:964px) {
+    .pageFooter {
+        .fnb {
+            position:static;
+            ul {
+                justify-content:center;
+                background:coral;
+                flex-wrap:wrap;
+               
+
+                li {
+                    width:20%;
+                    margin-left:0;
+                    box-sizing:border-box;
+                    text-align:center;
+                    margin-bottom:10px;
+                    background:rgba(0,0,0,0.2); 
+
+                    &:nth-child(even) {
+                        background-color:white;
+                    }
+                }
+            } 
+        }
+
+        .sns {
+            position:static;
+            justify-content:center;
+            margin:20px 0;
+        }
+    }
+}
