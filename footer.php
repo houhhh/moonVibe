@@ -66,9 +66,15 @@
     </nav>
 
     <ul class="sns">
-        <li>SNS</li>
-        <li>SNS</li>
-        <li>SNS</li>
+        <li>
+            <a href="#">T</a>
+        </li> 
+        <li>
+            <a href="#">F</a>
+        </li> 
+        <li>
+            <a href="#">I</a>
+        </li> 
     </ul>
 
    
