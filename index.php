@@ -5,7 +5,7 @@
     <?php include './header.php'; ?>
     
     <!-- main -->
-
+   
     <div class="main">
         <div class="bannerTop">
             <a href="http://www.naver.com" class="link">
