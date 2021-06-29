@@ -1,18 +1,144 @@
 @charset "utf-8";
+// 반응형 
 
-// Moon_20210620_C.mp4 - 미디어 시작 
+//  Responsible css
 
-@media all and (max-width:1273px) {
-    .pageFooter {
-        padding: 18px 20px 400px 250px;
-        .footerHead {
-            
-        }
-        .contact {
-            display:block;
-            .serial {
-                display:block;
+@media all and (max-width:992px) {
+    .main {
+        .main-pick {
+
+            padding:0;
+            .inner {
+                width:100%;
+                position:relative;
+                .thum {
+                    float:none;
+                    width:auto;
+                    margin-right:0;
+                    img {
+                        width:100%;
+                    }
+                }
+    
+                .content {
+                    float:none;
+                    position:absolute;
+                    left:30px;
+                    bottom:30px;
+                    height:auto;
+                    h3 {
+                        color:#fff;
+                        font-size:40px;
+                        font-weight:600;
+                        line-height:1;
+                    }
+                    p, .info {
+                        display:none;
+                    }
+                }
             }
+        }
+
+        .baseWidth {
+            width:auto;
+            margin-left:15px;
+            margin-right:15px;
+        }
+
+        .main-magazine {
+            .list {
+                li {
+                    width:calc(50% - 10px);
+                    .thum {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media all and (max-width:767px) {
+    .pageHeader {
+         width:100%;
+         background-color:transparent;
+         top:67px;
+
+         .scrollArea {
+            //  display:none;
+         }
+
+         .btnInstall {
+             display:none;
+         }
+         .logo {
+             .btnSearch {
+                 right:50px;
+             }
+
+             .btnHam {
+                 display:block;
+             }
+         }
+
+
+         .scrollArea {
+            top:-67px;
+            max-height:none;
+            display:none;
+           
+         }
+
+    }
+
+    .main {
+        padding-left:0;
+    }
+
+    .pageFooter {
+        padding-left:0;
+    }
+}
+
+@media all and (max-width:964px) {
+    .pageFooter {
+        .fnb {
+            position:static;
+            ul {
+                justify-content:center;
+                background:coral;
+                flex-wrap:wrap;
+               
+
+                li {
+                    width:20%;
+                    margin-left:0;
+                    box-sizing:border-box;
+                    text-align:center;
+                    margin-bottom:10px;
+                    background:rgba(0,0,0,0.2); 
+                    &:nth-child(even) {
+                        background-color:white;
+                    }
+                }
+            } 
+        }
+
+        .sns {
+            position:static;
+            justify-content:center;
+            margin:20px 0;
+            li {
+                
+                // a {
+                //     // @include circle2(25px,blue);
+                //     @include circle3($t:yellow) { // 기본값도 안넣고 싶으면 null 쓰면됨
+                //         border:1px solid red;// 믹신 (인클로드) 안에 속성 추가하기
+                //     }
+                // }
+            }
+
         }
     }
 }

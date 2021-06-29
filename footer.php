@@ -2,8 +2,10 @@
     <div class="notice">
         <h3>공지사항</h3>
         <ul class="list">
-            <li><a href="#">보고 듣고만 있어도 힐링,문법의 보고 듣고만 있어도
-                힐링,문별의고 듣고만 있어도 힐링,문별의</a></li>
+            <li>
+                <a href="#">보고 듣고만 있어도 힐링,문별의 보고 듣고만 있어도 힐링,문별의고 듣고만 있어도 힐링,문별의 보고 듣고만 있어도 힐링,문별의</a>
+            </li>
+
             <li><a href="#">내용</a></li>
             <li><a href="#">내용</a></li>
             <li><a href="#">내용</a></li>
@@ -18,7 +20,7 @@
             <dt>통신판매업신고번호</dt>
             <dd>제2006-경기성남-0692호</dd>
         </dl>
-
+<!-- 
         <ul>
             <li>
                 <strong>사업자등록번호</strong>
@@ -28,7 +30,7 @@
                 <strong>통신판매업신고번호</strong>
                 <p>제2006-경기성남-0692호</p>
             </li>
-        </ul>
+        </ul> -->
         <address>
             <ul>
                 <li>
@@ -65,7 +67,16 @@
     </nav>
 
     <ul class="sns">
-        <li>SNS</li>
+        <li>
+            <a href="#">T</a>
+        </li>
+        <li>
+            <a href="#">F</a>
+        </li>
+        <li>
+            <a href="#">I</a>
+        </li>
+       
     </ul>
 
    
