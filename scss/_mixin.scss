@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@mixin abbr($w:100%) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: $w; // width 값 
+}
+
+    
 
 @mixin flex($a:stretch, $j:flex-start, $wrap:nowrap) {
     display: flex;

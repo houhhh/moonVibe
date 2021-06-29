@@ -8,12 +8,15 @@
     bottom:83px;
     position:relative; 
 
-    .menu {
-        @include flex($a:center, $j:space-between);
-
+    .notice {
+        border-bottom:1px solid #ddd;
+        display:flex;
+        
         .list {
-            @include flex($a:center, $j:space-between);
+            height:50px;
+            overflow:hidden;
         }
     }
+    
 }
 
