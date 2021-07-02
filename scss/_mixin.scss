@@ -57,7 +57,11 @@
         }
     }
 }
-
+@mixin snsIcon($n, $x, $y) {
+    &:nth-child(#{$n}) a {
+        background-position:$x $y;
+    }
+}
 
 @mixin baseWidth($w:1160px, $mg:auto) {
     max-width: $w;
@@ -78,11 +82,10 @@
 @mixin circle3($s:30px, $c:black, $t:#fff) { // 
     width:$s;
     height:$s;
-    border-radius:50%; // radius 변수를 넣었을때 래디우스는 50으로 따로 지정
-    display:block; // 블럭이랑 컬러도 같이 넣으면 따로 css 에서 넣을 필요없음
+    border-radius:50%; //radius 변수를 넣었을때 래디우스는 50으로 따로 지정
+    display:block; //block이랑 컬러도 같이 넣으면 따로 css 에서 넣을 필요없음
     background-color:$c;
     color:$t; 
-    @content; // 자식요소안의 속성 추가 - css 에서 {}아래에 열어서 속성 넣을수 있음
-
+    @content; //@content자식요소안의 속성 추가 - css 에서 {}아래에 열어서 속성 넣을수 있음
 
 }
