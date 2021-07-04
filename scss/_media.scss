@@ -4,7 +4,8 @@
 //  Responsible css
 @media all and (max-width:1273px) {
     .inner {
-        height:200px;
+        height:200px; //q.inner로 세로길이를 수정하면 전체적으로 세로길이를 줄일수 가없고 이미지따로 글따로 줄여야하는데 main-pick을 줄이면 아래 매거진이 망가짐
+                     
         
     }
 }
@@ -14,7 +15,7 @@
             .content {
                 height:200px;
             }
-            .thum {
+            .thum {// Q.1273에 맞추려고 thum의 가로값을 줄여야 오른쪽 글을 왼쪽으로 당길수 있는데 줄이게되면 이미지가 퍼센테이지로 되어있어서 이미지 세로값도 줄어듬
                 width:150px;
                 img {
                     width:62%;
