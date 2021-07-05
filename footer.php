@@ -5,6 +5,7 @@
             <li>
                 <a href="#">보고 듣고만 있어도 힐링,문별의 보고 듣고만 있어도 힐링,문별의고 듣고만 있어도 힐링,문별의 보고 듣고만 있어도 힐링,문별의</a>
             </li>
+
             <li><a href="#">내용</a></li>
             <li><a href="#">내용</a></li>
             <li><a href="#">내용</a></li>
@@ -18,18 +19,7 @@
             <dd>220-81-62517</dd>
             <dt>통신판매업신고번호</dt>
             <dd>제2006-경기성남-0692호</dd>
-        </dl>
-<!-- 
-        <ul>
-            <li>
-                <strong>사업자등록번호</strong>
-                <p>220-81-62517</p>
-            </li>
-            <li>
-                <strong>통신판매업신고번호</strong>
-                <p>제2006-경기성남-0692호</p>
-            </li>
-        </ul> -->
+        </dl> 
         <address>
             <ul>
                 <li>
@@ -67,18 +57,18 @@
 
     <ul class="sns">
         <li>
-            <a href="#">T</a>
-        </li> 
+            <a href="#"><i class="blind">Facebook</i></a>
+            <!-- (이미지 안내)이미지만 들어가는 a태그의 경우 기본적으로 html에서 글로 안내해줘야하는데 
+                                사이트에선 텍스트를 감춰야하기때문에 blind클래스로 가려준다 blind로 감추는
+                                부분엔 이미지를 삽입하면 안되므로 위의 부모에다 이미지 삽입한다. -->
+        </li>
         <li>
-            <a href="#">F</a>
-        </li> 
+            <a href="#"><i class="blind">Instagram</i></a>
+        </li>
         <li>
-            <a href="#">I</a>
+            <a href="#"><i class="blind">Naver</i></a>
         </li> 
-    </ul>
-
-   
-</footer>
-    
+    </ul> 
+</footer> 
     
 <script src="./js/common.js"></script>

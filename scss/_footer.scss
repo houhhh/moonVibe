@@ -1,15 +1,21 @@
 @charset "utf-8";
 
+.sns a { // 이곳에 fnb 의 6번째 li에 이미지를 들어가게끔 클래스를 추가해주면 될거 같은데 에프터가 많아서 그런지 제가 적는 방식이 틀린것 같습니다.
+    background:url($url + "sp_vibe.62b23c4a.png") no-repeat;
+}
+
 .pageFooter {
     font-size:13px;
     background-color:#f3f3f3;
-    border-top:1px solid #ddd;
-    padding-left: 255px; 
+    border-top:1px solid #e1e1e1;
+    padding-left: 245px; 
     bottom:83px;
+
+    // height:148px; //position으로 높이가 잡힐줄 알았는데 짧음 높이를 줘야하는 상황과 안줘도 되는상황? 왼쪽 메뉴 높이랑 다른이유
     position:relative; 
 
     .notice {
-        border-bottom:1px solid #ddd;
+        border-bottom:1px solid #e1e1e1;
         height:40px;
         line-height:40px;
         display:flex;
@@ -17,6 +23,7 @@
         h3 {
             font-weight:600;
             margin-right:10px;
+            color:#969696;
         }
 
         .list {
@@ -38,12 +45,12 @@
     }
 
     .info {
-        margin:20px 0;
-        background:rgba(255,255,0,0.5);
+        margin:25px 0 20px 0;
+        
       
         dl {
             display:flex;
-            
+            margin:7px 0;
             dt {
                 color:#999;
             }
@@ -77,25 +84,56 @@
         position:absolute;
         right:20px;
         top:12px;
+        color:#969696;
         ul {
             display:flex;
 
             li {
-                margin-left:10px;
+                &:first-child {
+                    color:#696969;
+                }
+                &:nth-child(6) {
+                    position:relative;
+                    margin-left:42px;
+                    &:before {
+                        content:'';
+                        position:absolute;
+                        top:0;
+                        right:50px;
+                        display:inline-block;
+                        height:15px;
+                        width:15px;
+                        background-position:-860px -437px;
+                    }
+                    
+                }
+                margin-left:18px;
             }
         }
     }
 
-    .sns {
-        background:rgba(0,255,255,0.3);
+    .sns { //(아이콘잡기)포지션으로 위치 잡고 마진으로 간격 잡음 따로 크기는 없음
+        
         position:absolute;
-        top:50px;
+        top:67px;
         right:20px;
-        display:flex;
+        display:flex; 
+       
         li {
-            margin:0 5px;
+            margin:0 12px;  // width:100px; 가로값이 없지만 가로크기를 가지는 이유는 마진이 양쪽으로 먹어서이다.
+            
+            a {//(이미지 안내)이미지만 들어가는 a태그의 경우 기본적으로 html에서 글로 안내해줘야하는데 사이트에선 텍스트를 감춰야하기때문에 blind클래스로 가려준다 blind로 감추는 부분엔 이미지를 삽입하면 안되므로 위의 부모에다 이미지 삽입한다.  
+                display:block;
+                width:26px;
+                height:27px;
+                
+            }
+            @include snsIcon(1, -1016px, -729px);//이미지 넘버링 삽입
+            @include snsIcon(2, -345px, -948px);
+            @include snsIcon(3, -413px, -948px);
         }
     }
+    
 }
 
 /* 
